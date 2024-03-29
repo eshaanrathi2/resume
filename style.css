@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5; /* Increase line height for better readability */
+  background-color: #fae7d1; /* Change the background color to a light gray */
+}
+
+h1 {
+  font-size: 2em;
+}
+
+/* Increase spacing for list items */
+ul {
+  padding-left: 20px; /* Add padding to the left of the unordered list */
+}
+
+li {
+  margin-bottom: 5px; /* Add margin between list items */
+}
+
+/* Increase spacing between paragraphs */
+p {
+  margin-bottom: 20px; /* Add margin below paragraphs */
+}
+
+
+#holder {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+#left {
+  flex-grow: 100;
+  min-width: 1em;
+  max-width: 4em;
+}
+
+#middle {
+  max-width: 35em;
+}
+
+#right {
+  min-width: 1em;
+  flex-grow: 100;
+}
+
+a {
+  color: #660000;
+}
+
+a:hover {
+  color: #400000;
+}
