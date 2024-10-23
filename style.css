@@ -52,3 +52,24 @@ a {
 a:hover {
   color: #400000;
 }
+
+/* Table styles */
+table {
+  width: 100%; /* Ensure the table takes the full width of the container */
+  border-collapse: collapse; /* Remove space between borders */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Add border to cells */
+  padding: 8px; /* Add padding */
+  text-align: left; /* Left-align text for rows */
+}
+
+th {
+  text-align: center; /* Center-align headers */
+}
+
+tr:nth-child(even) {
+  /* Remove the alternate row color if you don't want any coloring */
+}
+
