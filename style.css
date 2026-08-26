@@ -7,6 +7,37 @@ body {
 
 h1 {
   font-size: 2em;
+  margin: 0;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-bottom: 0.6em;
+  flex-wrap: wrap;
+}
+
+.header-nav {
+  display: flex;
+  gap: 0.5em;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 0.25em 0.7em;
+  border: 1px solid #660000;
+  border-radius: 4px;
+  color: #660000;
+  text-decoration: none;
+  font-size: 0.9em;
+  background: transparent;
+}
+
+.nav-button:hover {
+  background: #660000;
+  color: #fae7d1;
 }
 
 /* Increase spacing for list items */
