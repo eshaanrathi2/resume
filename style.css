@@ -11,12 +11,17 @@ h1 {
   margin: 0;
 }
 
+h3 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
 .header-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1em;
-  margin-bottom: 0.6em;
+  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
@@ -40,6 +45,7 @@ ul {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
+  margin-top: 5px;
 }
 
 li {
@@ -52,7 +58,7 @@ p {
 
 #holder {
   max-width: 35em;
-  margin: 25px auto;
+  margin: 50px auto;
   padding: 0 20px;
 }
 
@@ -107,11 +113,16 @@ a:hover {
 }
 
 /* Writings */
+
 .writing {
   display: grid;
   grid-template-columns: 1fr 80px;
   column-gap: 30px;
   margin-bottom: 20px;
+}
+
+.writings {
+  margin-top: 25px;
 }
 
 .writing-date {
