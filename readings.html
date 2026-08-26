@@ -11,21 +11,47 @@
 </head>
 
 <body>
-    <div id='holder'>
-        <div id='left'></div>
-        <div id='middle'>
+    <div id="holder">
+        <div id="left"></div>
+
+        <div id="middle">
+
             <p>
                 <a href="index.html" class="home-button">Return to Home</a>
             </p>
 
             <h1>Readings</h1>
-            <ul>
-                <li>
-                    <a href="notes/time-clocks.html">Time, Clocks, and the Ordering of Events in a Distributed System</a>
+
+            <ul class="readings">
+
+                <li class="reading">
+                    <div>
+                        <h2>
+                            Time, Clocks, and the Ordering of Events in a Distributed System
+                        </h2>
+
+                        <p class="author">
+                            Leslie Lamport
+                        </p>
+
+                        <p class="description">
+                            Lamport shows that it's not possible to have a global clock in a
+                            distributed system because of network latencies and hardware
+                            differences. He proposes logical clocks to order events. Ordering
+                            is important for replication and serializing operations.
+                        </p>
+                    </div>
+
+                    <div class="reading-date">
+                        2026-08
+                    </div>
                 </li>
+
             </ul>
+
         </div>
-        <div id='right'></div>
+
+        <div id="right"></div>
     </div>
 </body>
 

@@ -1,8 +1,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
-  line-height: 1.5; /* Increase line height for better readability */
-  background-color: #fae7d1; /* Change the background color to a light gray */
+  line-height: 1.5;
+  background-color: #fae7d1;
+  margin: 0;
 }
 
 h1 {
@@ -21,59 +22,42 @@ h1 {
 
 .header-nav {
   display: flex;
-  gap: 0.5em;
+  gap: 1em;
 }
 
 .nav-button {
-  display: inline-block;
-  padding: 0.25em 0.7em;
-  border: 1px solid #660000;
-  border-radius: 4px;
   color: #660000;
   text-decoration: none;
   font-size: 0.9em;
-  background: transparent;
 }
 
 .nav-button:hover {
-  background: #660000;
-  color: #fae7d1;
+  color: #400000;
+  text-decoration: underline;
 }
 
-/* Increase spacing for list items */
 ul {
-  padding-left: 20px; /* Add padding to the left of the unordered list */
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 li {
-  margin-bottom: 5px; /* Add margin between list items */
+  margin-bottom: 7px;
 }
 
-/* Increase spacing between paragraphs */
 p {
-  margin-bottom: 20px; /* Add margin below paragraphs */
+  margin-bottom: 20px;
 }
-
 
 #holder {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  display: flex;
-}
-
-#left {
-  flex-grow: 100;
-  min-width: 1em;
-  max-width: 4em;
+  max-width: 35em;
+  margin: 25px auto;
+  padding: 0 20px;
 }
 
 #middle {
-  max-width: 35em;
-}
-
-#right {
-  min-width: 1em;
-  flex-grow: 100;
+  width: 100%;
 }
 
 a {
@@ -84,23 +68,84 @@ a:hover {
   color: #400000;
 }
 
-/* Table styles */
-table {
-  width: 100%; /* Ensure the table takes the full width of the container */
-  border-collapse: collapse; /* Remove space between borders */
+
+/* Readings */
+
+.readings {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0 0;
 }
 
-th, td {
-  border: 1px solid #ddd; /* Add border to cells */
-  padding: 8px; /* Add padding */
-  text-align: left; /* Left-align text for rows */
+.reading {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+.reading h2 {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0 0 4px;
+}
+
+.reading .author {
+  margin: 0;
+}
+
+.reading .description {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.reading-date {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Writings */
+.writing {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  column-gap: 30px;
+  margin-bottom: 20px;
+}
+
+.writing-date {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Table styles */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 th {
-  text-align: center; /* Center-align headers */
+  text-align: center;
 }
 
-tr:nth-child(even) {
-  /* Remove the alternate row color if you don't want any coloring */
-}
 
+/* Mobile */
+
+@media (max-width: 600px) {
+  .reading {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .reading-date {
+    text-align: left;
+    order: -1;
+  }
+}
